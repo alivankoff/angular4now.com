@@ -4721,9 +4721,17 @@ html body .big {
 }
 
 .light-section, .light-section h1, .light-section h2, .light-section h3, .light-section h4, .light-section h5, .light-section h6, .light-section .h1, .light-section .h2, .light-section .h3, .light-section .h4, .light-section .h5, .light-section .h6 {
+  position: relative;
   color: #fff;
+  z-index: 100;
 }
-
+.section-shadow {
+  position: relative;
+  top: 77px;
+  left: 3px;
+  color: #336699 !important;
+  z-index: 50;
+}
 /*
 * Components
 * ========================================
