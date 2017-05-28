@@ -3597,6 +3597,10 @@ html body .big {
   letter-spacing: 0.05em;
 }
 
+.text-emphasized {
+  font-weight: 500;
+  font-size: 1.1em;
+}
 /*
 * 10. Blocks visibility
 * ====================
@@ -4588,7 +4592,15 @@ html body .big {
   -moz-transition-duration: 1.2s;
   transition-duration: 1.2s;
 }
-
+/*
+ * 12. Pictures
+ * ============
+ */
+.picture-button {
+  position: relative;
+  top: 320px;
+  text-align: center;
+}
 /*
 * 13. Color
 * ==========
@@ -4635,9 +4647,9 @@ html body .big {
 
 .bg-1 {
   position: relative;
-  background: url(../img/index-13.png) no-repeat;
+  background: url(../img/s_learnAngularToSucceed.jpg) no-repeat;
   background-size: cover;
-  background-position: 50% 50%;
+  background-position: 0% 50%;
 }
 
 @media (min-width: 1200px) {
@@ -10562,7 +10574,18 @@ img.mfp-img {
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
 }
-
+.carousel-adjust-for-image {
+  left: 500px;
+  background: rgba(255, 255, 255, 0.6);
+  padding: 6px 0;
+  border: 2px solid #336699;
+  border-radius: 12px;
+}
+.talking {
+  color: #0b0b0b;
+  font-family: "Arial Rounded MT Bold", Arial, Calibri, Helvetica;
+  font-weight: 700;
+}
 .owl-carousel .owl-animated-in {
   z-index: 0;
 }
@@ -10636,7 +10659,7 @@ img.mfp-img {
  */
 .owl-carousel {
   display: none;
-  width: 100%;
+  width: 70%;  /* reduce size of the carousel*/
   -webkit-tap-highlight-color: transparent;
   /* position relative and z-index fix webkit rendering fonts issue */
   position: relative;
